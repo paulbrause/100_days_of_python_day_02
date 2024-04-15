@@ -1,4 +1,6 @@
-number = input("Please input a two-digit-number:\n")
-sum = int(number[0]) + int(number[1])
+height = float(input("How tall are you (in meters)?\n"))
+weight = float(input("How much do you weight (in kilogram)?\n"))
 
-print(number[0] + " + " + number[1] + " = " + str(sum))
+bmi = int(weight / height ** 2)
+
+print("Your BMI is " + str(bmi) + ".")
