@@ -1,6 +1,10 @@
-height = float(input("How tall are you (in meters)?\n"))
-weight = float(input("How much do you weight (in kilogram)?\n"))
+age = int(input("How old are you?\n"))
 
-bmi = int(weight / height ** 2)
+death_age = 90
+death_in_weeks = death_age * 52
 
-print("Your BMI is " + str(bmi) + ".")
+age_in_weeks = age * 52
+
+weeks_left = death_in_weeks - age_in_weeks
+
+print(f"You are having {weeks_left} weeks left.")
